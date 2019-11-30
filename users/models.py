@@ -24,10 +24,10 @@ class User(AbstractUser):
         ("krw", "KRW"),
     )
 
-    avatar = models.ImageField(null=True, blank=True)
-    gender = models.CharField(choices=GENDER_CHOICES, max_length=10, null=True)
-    bio = models.TextField(default="")
-    birthdate = models.DateField(null=True)
-    language = models.CharField(null=True, choices=LANGUAGE_CHOICES, max_length=10)
-    currency = models.CharField(null=True, choices=CURRENCY_CHOICES, max_length=10)
+    avatar = models.ImageField(blank=True)
+    gender = models.CharField(choices=GENDER_CHOICES, max_length=10, blank=True)
+    bio = models.TextField(blank=True)
+    birthdate = models.DateField(blank=True, null=True)
+    language = models.CharField(blank=True, choices=LANGUAGE_CHOICES, max_length=10)
+    currency = models.CharField(blank=True, choices=CURRENCY_CHOICES, max_length=10)
     superhost = models.BooleanField(default=False)

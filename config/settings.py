@@ -39,9 +39,18 @@ DJANGO_APPS = [
     "django.contrib.staticfiles",
 ]
 
-PROJECT_APPS = ["users.apps.UsersConfig"]
+PROJECT_APPS = [
+    "users.apps.UsersConfig",
+    "rooms.apps.RoomsConfig",
+    "core.apps.CoreConfig",
+    "reviews.apps.ReviewsConfig",
+    "reservations.apps.ReservationsConfig",
+    "lists.apps.ListsConfig",
+]
 
-INSTALLED_APPS = DJANGO_APPS + PROJECT_APPS
+THIRDPARTY_APPS = ["django_countries"]
+
+INSTALLED_APPS = DJANGO_APPS + PROJECT_APPS + THIRDPARTY_APPS
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",

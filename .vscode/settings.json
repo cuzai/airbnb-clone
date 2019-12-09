@@ -1,9 +1,0 @@
-{
-    "python.pythonPath": "/home/cuzai/.local/share/virtualenvs/Air_bnb_clone-YzY7mmO4/bin/python",
-    "python.linting.flake8Enabled": true,
-    "python.linting.enabled": true,
-    "python.formatting.provider": "black",
-    "python.linting.flake8Args": [
-        "--max-line-length=88"
-    ]
-}
